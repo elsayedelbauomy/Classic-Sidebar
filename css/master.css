@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img {
+    width: 80px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parent {
+    background-color: #fff;
+    width: 400px;
+    padding: 1em;
+}
+
+.parent >  h2:first-child {
+    margin: 15px 10px;
+    position: relative;
+}
+
+.parent > h2:first-child::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: rgb(0, 166, 255);
+    position: absolute;
+    right: 126px;
+    top: 14px;
+}
+
+.parent > div:not(.gallery) {
+    margin: 30px 13px;
+    opacity: .7;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+ }
+ span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background-color:#ccc;
+    border-radius: 5px;
+ 
+
+ }
+
+ .parent > div:not(.gallery,.ss)::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(167, 152, 152);
+    top: 34px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.parent > h2:nth-child(7) {
+    margin: 15px 10px;
+    position: relative;
+}
+
+.parent > h2:nth-child(7)::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: rgb(0, 166, 255);
+    position: absolute;
+    left: 96px;
+    top: 14px;
+}
+
+.parent > .gallery {
+    /* width: 300px;  that was irrelvent code*/ 
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
